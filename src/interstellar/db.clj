@@ -13,3 +13,10 @@
 (defn create-database! []
   (doseq [query schema-queries]
     (query)))
+
+(def default-data-queries
+  (yes/defqueries "queries/defaults.sql" {:connection db-spec}))
+
+(defn insert-default-data! []
+  (doseq [query default-data-queries]
+    (query)))
