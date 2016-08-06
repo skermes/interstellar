@@ -9,6 +9,7 @@
                  [org.postgresql/postgresql "9.4-1201-jdbc41"]
                  [compojure "1.5.1"]
                  [hiccup "1.0.5"]
-                 [ring/ring-defaults "0.2.1"]]
+                 [ring/ring-defaults "0.2.1"]
+                 [logback-bundle/core-bundle "0.2.2"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler interstellar.web/app})

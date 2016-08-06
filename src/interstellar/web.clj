@@ -5,6 +5,7 @@
 
 (defroutes app-routes
   (GET "/" [] "Hello, void of interstellar space")
+  (route/resources "/")
   (route/not-found "The vastness between the stars is empty and cold"))
 
 (def app
