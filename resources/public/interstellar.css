@@ -1,1 +1,22 @@
-body { background: green; }
+body {
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Futura, "Segoe UI", Verdana, sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20vw;
+
+  /* Background clip trick from
+     http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+  */
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+              url(title-bg.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}

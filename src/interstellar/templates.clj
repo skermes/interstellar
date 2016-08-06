@@ -12,8 +12,13 @@
       [:body
         contents]]))
 
+(def title
+  [:h1.title "Interstellar"])
+
 (defn service-section [service]
   [:h3 (:name service)])
 
 (defn admin-page [services]
-  (map service-section services))
+  (list
+    title
+    (map service-section services)))
