@@ -12,5 +12,6 @@ INSERT INTO services (name) VALUES
 -- name: default-statuses!
 -- Inserts default poll statuses.
 INSERT INTO statuses (description) VALUES
+    ('pending'),
     ('success'),
     ('failure');
