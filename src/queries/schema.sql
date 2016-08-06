@@ -2,7 +2,8 @@
 -- Table for the services that we poll from
 CREATE TABLE IF NOT EXISTS services (
     id serial PRIMARY KEY,
-    name varchar(200)
+    name varchar(200),
+    logo varchar(1000)
 );
 
 -- name: create-statuses!

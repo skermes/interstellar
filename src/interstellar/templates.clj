@@ -1,5 +1,6 @@
 (ns interstellar.templates
-  (:require [hiccup.page :refer [html5 include-css]]))
+  (:require [hiccup.page :refer [html5 include-css]]
+            [clojure.string :as s]))
 
 (defn page [& contents]
   (html5
@@ -16,7 +17,9 @@
   [:h1.title "Interstellar"])
 
 (defn service-section [service]
-  [:h3 (:name service)])
+  [:div.section-header
+    [:img.service-logo {:src (:logo service)}]
+  [:h3 (:name service)]])
 
 (defn admin-page [services]
   (list

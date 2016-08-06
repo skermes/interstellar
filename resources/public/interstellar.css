@@ -20,3 +20,21 @@ h1, h2, h3, h4, h5, h6 {
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
+
+.section-header {
+  margin-top: 3rem;
+  border-bottom: 2px solid #333;
+  position: relative;
+}
+
+.section-header h3 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  left: 3rem;
+}
+
+.section-header img {
+  height: 1rem;
+  position: absolute;
+}
