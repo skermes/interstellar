@@ -20,3 +20,5 @@
 (defn insert-default-data! []
   (doseq [query default-data-queries]
     (query)))
+
+(yes/defqueries "queries/data.sql" {:connection db-spec})
